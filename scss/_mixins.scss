@@ -1,0 +1,39 @@
+@mixin font-style {
+  font: {
+    family: "League Spartan", sans-serif;
+    weight: 700;
+  }
+}
+
+@mixin bg-color($color) {
+  background-color: $color;
+}
+
+@mixin cursor-type {
+  cursor: pointer;
+}
+
+@mixin box-shadow($color) {
+  box-shadow: 0 4px 1px $color;
+}
+
+@mixin toggle-btn-shadow($color) {
+  box-shadow: 1px 1px 3px $color, -1px -1px 3px $color;
+}
+
+@mixin text-color($color) {
+  color: $color;
+}
+
+@mixin flex--space-between {
+  display: flex;
+  justify-content: space-between;
+}
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone {
+    @media only screen and (max-width: 23.5em) {
+      @content;
+    } //375px
+  }
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/main.css" />
+  </head>
+  <body>
+    <main class="calculator">
+      <header class="calculator_header">
+        <h1 class="calculator_logo">calc</h1>
+        <div class="theme">
+          <div>
+            <p class="theme_heading">THEME</p>
+          </div>
+          <div class="flex">
+            <p class="theme-options">
+              <span>1</span>
+              <span>2</span>
+              <span>3</span>
+            </p>
+
+            <input
+              type="range"
+              aria-label="theme switcher"
+              min="1"
+              max="3"
+              value="1"
+              class="theme-toggle"
+            />
+          </div>
+        </div>
+      </header>
+
+      <div class="calculator_display">0</div>
+
+      <div class="calculator_keypad">
+        <button class="btn" data-type="numeric">7</button>
+        <button class="btn" data-type="numeric">8</button>
+        <button class="btn" data-type="numeric">9</button>
+        <button class="btn btn-delete" data-type="delete">DEL</button>
+
+        <button class="btn" data-type="numeric">4</button>
+        <button class="btn" data-type="numeric">5</button>
+        <button class="btn" data-type="numeric">6</button>
+        <button class="btn" data-type="operator">+</button>
+
+        <button class="btn" data-type="numeric">1</button>
+        <button class="btn" data-type="numeric">2</button>
+        <button class="btn" data-type="numeric">3</button>
+        <button class="btn" data-type="operator">-</button>
+
+        <button class="btn" data-type="decimal">.</button>
+        <button class="btn" data-type="numeric">0</button>
+        <button class="btn" data-type="operator">/</button>
+        <button class="btn" data-type="operator">*</button>
+
+        <button class="btn btn-reset" data-type="reset" id="reset">
+          RESET
+        </button>
+        <button class="btn btn-equals-to" data-type="result">=</button>
+      </div>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>

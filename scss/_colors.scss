@@ -1,0 +1,108 @@
+// THEME ONE
+// Main Background Color
+:root.theme1 {
+  --primary-color-1: hsl(222, 26%, 31%);
+
+  //   display bg color
+  --secondary-color-2: hsl(224, 36%, 15%);
+
+  // Toggle and Keypad Background Color
+  --primary-color-2: hsl(224, 36%, 15%);
+
+  // Delete and Reset Buttons Background Color
+  --secondary-color-1: hsl(225, 21%, 49%);
+  --shadow-color-1: hsl(224, 28%, 35%);
+
+  // Delete and Reset Buttons hover State Background Color
+  --hover-bg-color-1: hsl(226, 21%, 59%);
+
+  // Digit and Operator Buttons Background Color
+  --primary-color-3: hsl(30, 25%, 89%);
+  --shadow-color-2: hsl(28, 16%, 65%);
+
+  // Digit and Operator Buttons Hover State Background Color
+  --hover-bg-color-2: hsl(31, 25%, 99%);
+
+  // Toggle and Result Buttons Background Color
+  --secondary-color-3: hsl(6, 63%, 50%);
+  --shadow-color-3: hsl(6, 70%, 34%);
+
+  // Result Button Hover State Background Color
+  --hover-bg-color-3: hsl(7, 63%, 60%);
+
+  // Text colors
+  --primary-text-color: hsl(221, 14%, 31%);
+  --secondary-text-color: hsl(0, 0%, 100%);
+}
+
+:root.theme2 {
+  --primary-color-1: hsl(0, 0%, 90%);
+
+  //   display bg color
+  --secondary-color-2: hsl(0, 0%, 93%);
+
+  // Toggle and Keypad Background Color
+  --primary-color-2: hsl(0, 5%, 81%);
+
+  // Delete and Reset Buttons Background Color
+  --secondary-color-1: hsl(185, 42%, 37%);
+  --shadow-color-1: hsl(185, 58%, 25%);
+
+  // Delete and Reset Buttons hover State Background Color
+  --hover-bg-color-1: hsl(186, 42%, 47%);
+
+  // Digit and Operator Buttons Background Color
+  --primary-color-3: hsl(45, 7%, 89%);
+  --shadow-color-2: hsl(35, 11%, 61%);
+
+  // Digit and Operator Buttons Hover State Background Color
+  --hover-bg-color-2: hsl(46, 7%, 99%);
+
+  // Toggle and Result Buttons Background Color
+  --secondary-color-3: hsl(6, 63%, 50%);
+  --shadow-color-3: hsl(6, 70%, 34%);
+
+  // Result Button Hover State Background Color
+  --hover-bg-color-3: hsl(7, 63%, 60%);
+
+  // Text colors
+  --primary-text-color: hsl(60, 10%, 19%);
+  --secondary-text-color: hsl(0, 0%, 100%);
+}
+
+:root.theme3 {
+  // background color
+  --primary-color-1: hsl(268, 75%, 9%);
+
+  //   display bg color
+  --secondary-color-2: hsl(268, 71%, 12%);
+
+  // Toggle and Keypad Background Color
+  --primary-color-2: hsl(268, 71%, 12%);
+
+  // Delete and Reset Buttons Background Color
+  --secondary-color-1: hsl(281, 89%, 26%);
+  --shadow-color-1: hsl(285, 91%, 52%);
+
+  // Delete and Reset Buttons hover State Background Color
+  --hover-bg-color-1: hsl(282, 89%, 36%);
+
+  // Digit and Operator Buttons Background Color
+  --primary-color-3: hsl(268, 47%, 21%);
+  --shadow-color-2: hsl(290, 70%, 36%);
+
+  // Digit and Operator Buttons Hover State Background Color
+  --hover-bg-color-2: hsl(269, 47%, 31%);
+
+  // Toggle and Result Buttons Background Color
+  --secondary-color-3: hsl(176, 100%, 44%);
+  --shadow-color-3: hsl(177, 92%, 70%);
+
+  // Result Button Hover State Background Color
+  --hover-bg-color-3: hsl(177, 100%, 54%);
+
+  // Text colors
+  --primary-text-color: hsl(52, 100%, 62%);
+  --secondary-text-color: hsl(0, 0%, 100%);
+  --tertiary-text-color: hsl(198, 20%, 13%);
+}

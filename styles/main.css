@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&display=swap");
+:root.theme1 {
+  --primary-color-1: hsl(222, 26%, 31%);
+  --secondary-color-2: hsl(224, 36%, 15%);
+  --primary-color-2: hsl(224, 36%, 15%);
+  --secondary-color-1: hsl(225, 21%, 49%);
+  --shadow-color-1: hsl(224, 28%, 35%);
+  --hover-bg-color-1: hsl(226, 21%, 59%);
+  --primary-color-3: hsl(30, 25%, 89%);
+  --shadow-color-2: hsl(28, 16%, 65%);
+  --hover-bg-color-2: hsl(31, 25%, 99%);
+  --secondary-color-3: hsl(6, 63%, 50%);
+  --shadow-color-3: hsl(6, 70%, 34%);
+  --hover-bg-color-3: hsl(7, 63%, 60%);
+  --primary-text-color: hsl(221, 14%, 31%);
+  --secondary-text-color: hsl(0, 0%, 100%);
+}
+
+:root.theme2 {
+  --primary-color-1: hsl(0, 0%, 90%);
+  --secondary-color-2: hsl(0, 0%, 93%);
+  --primary-color-2: hsl(0, 5%, 81%);
+  --secondary-color-1: hsl(185, 42%, 37%);
+  --shadow-color-1: hsl(185, 58%, 25%);
+  --hover-bg-color-1: hsl(186, 42%, 47%);
+  --primary-color-3: hsl(45, 7%, 89%);
+  --shadow-color-2: hsl(35, 11%, 61%);
+  --hover-bg-color-2: hsl(46, 7%, 99%);
+  --secondary-color-3: hsl(6, 63%, 50%);
+  --shadow-color-3: hsl(6, 70%, 34%);
+  --hover-bg-color-3: hsl(7, 63%, 60%);
+  --primary-text-color: hsl(60, 10%, 19%);
+  --secondary-text-color: hsl(0, 0%, 100%);
+}
+
+:root.theme3 {
+  --primary-color-1: hsl(268, 75%, 9%);
+  --secondary-color-2: hsl(268, 71%, 12%);
+  --primary-color-2: hsl(268, 71%, 12%);
+  --secondary-color-1: hsl(281, 89%, 26%);
+  --shadow-color-1: hsl(285, 91%, 52%);
+  --hover-bg-color-1: hsl(282, 89%, 36%);
+  --primary-color-3: hsl(268, 47%, 21%);
+  --shadow-color-2: hsl(290, 70%, 36%);
+  --hover-bg-color-2: hsl(269, 47%, 31%);
+  --secondary-color-3: hsl(176, 100%, 44%);
+  --shadow-color-3: hsl(177, 92%, 70%);
+  --hover-bg-color-3: hsl(177, 100%, 54%);
+  --primary-text-color: hsl(52, 100%, 62%);
+  --secondary-text-color: hsl(0, 0%, 100%);
+  --tertiary-text-color: hsl(198, 20%, 13%);
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  font-family: "League Spartan", sans-serif;
+  font-weight: 700;
+  background-color: var(--primary-color-1);
+  color: var(--primary-text-color);
+}
+
+.calculator {
+  padding: 20px;
+  display: grid;
+  grid-template-rows: repeat(1fr, 3);
+  width: min(100%, 600px);
+}
+.calculator_header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+.calculator .theme {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: max(9rem, 30%);
+}
+.calculator .theme_heading {
+  margin-top: 20px;
+}
+.calculator .theme .theme-options {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+.calculator .theme .theme-toggle {
+  width: 100%;
+  background: var(--primary-color-2);
+  appearance: none;
+  border-radius: 100em;
+  padding: 0.21rem;
+}
+.calculator .theme .theme-toggle::-webkit-slider-thumb {
+  appearance: none;
+  width: 0.7rem;
+  height: 0.7rem;
+  border-radius: 50%;
+  background: var(--secondary-color-3);
+  box-shadow: var(--shadow-color-3);
+}
+.calculator_display {
+  white-space: nowrap;
+  overflow: scroll;
+  width: 100%;
+  border-radius: 7px;
+  padding: 15px;
+  display: flex;
+  font-size: 2rem;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 15px;
+  background-color: var(--secondary-color-2);
+}
+@media only screen and (max-width: 23.5em) {
+  .calculator_display {
+    font-size: 1.5rem;
+    nax-width: 200px;
+    overflow-x: scroll;
+  }
+}
+.calculator_keypad {
+  padding: 15px;
+  width: 100%;
+  height: auto;
+  display: grid;
+  border-radius: 7px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  background-color: var(--primary-color-2);
+}
+.calculator_keypad .btn {
+  height: 50px;
+  border-radius: 5px;
+  border: none;
+  font-size: 2rem;
+  font-weight: 700;
+  cursor: pointer;
+  background-color: var(--primary-color-3);
+  box-shadow: 0 4px 1px var(--shadow-color-2);
+  color: var(--primary-text-color);
+}
+.calculator_keypad .btn:hover {
+  background-color: var(--hover-bg-color-2);
+}
+@media only screen and (max-width: 23.5em) {
+  .calculator_keypad .btn {
+    font-size: 1.2rem;
+  }
+}
+.calculator_keypad .btn-delete {
+  background-color: var(--secondary-color-1);
+  box-shadow: 0 4px 1px var(--shadow-color-1);
+  color: var(--secondary-text-color);
+}
+.calculator_keypad .btn-delete:hover {
+  background-color: var(--hover-bg-color-1);
+}
+.calculator_keypad .btn-reset {
+  grid-column: 1/3;
+  background-color: var(--secondary-color-1);
+  box-shadow: 0 4px 1px var(--shadow-color-1);
+  color: var(--secondary-text-color);
+}
+.calculator_keypad .btn-reset:hover {
+  background-color: var(--hover-bg-color-1);
+}
+.calculator_keypad .btn-equals-to {
+  grid-column: 3/5;
+  background-color: var(--secondary-color-3);
+  box-shadow: 0 4px 1px var(--shadow-color-3);
+  color: var(--secondary-text-color);
+}
+.calculator_keypad .btn-equals-to:hover {
+  background-color: var(--hover-bg-color-3);
+}
+
+/*# sourceMappingURL=main.css.map */
